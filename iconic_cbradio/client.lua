@@ -1,4 +1,3 @@
-ESX = exports["es_extended"]:getSharedObject()
 
 RegisterCommand('cbradio', function ()
     cbRadio()
@@ -7,12 +6,10 @@ end)
 local toggled = false
 
 RegisterNUICallback('changeChannel', function(data,cb)
-    print(data)
     exports['pma-voice']:setRadioChannel(data)
 end)
 
 RegisterNUICallback('nuiFocus', function(data,cb)
-    exports['hud']:showUI()
     SetNuiFocus(false, false)
 end)
 
@@ -23,12 +20,11 @@ function cbRadio()
     if DoesEntityExist(vehicle) then
         toggled = true
         SetNuiFocus(true, true)
-        exports['hud']:hideUI()
         SendNUIMessage({
             action = 'toggleRadio'
         })
     else
-        ESX.ShowNotification('Jesteś poza pojazdem')
+        print('Nie ma cie w pojezdzie')
     end
     
 end
