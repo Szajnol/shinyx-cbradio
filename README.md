@@ -4,6 +4,8 @@ CB-RADIO For cars in fivem [STANDALONE] [PMA-VOICE]
 
 PREVIEW : https://streamable.com/syverh
 
+![cb-radio](https://github.com/user-attachments/assets/f5fb5fea-da3c-4974-90d2-8a6fbeae6dd7)
+
 ## FAQ
 
 #### Can I restrict it for only specific cars, truck for example?
